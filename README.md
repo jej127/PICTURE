@@ -1,5 +1,5 @@
-# PurposeToM
-This is an official implementation of PurposeToM.
+# PICTURE
+This is an official implementation of PICTURE.
 
 ## Prepare Packages
 To install packages, run the following command.
@@ -8,7 +8,7 @@ cd PurposeToM
 pip install -r requirements.txt
 ```
 
-## Evaluate Methods including PurposeToM
+## Evaluate Methods including PICTURE
 To evaluate different methods, run the following command.
 
 You may change "method" argument to one of {base, cot, ps, simulation, ptom, ours} to evaluate different methods.
