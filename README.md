@@ -4,7 +4,7 @@ This is an official implementation of PICTURE.
 ## Prepare Packages
 To install packages, run the following command.
 ```
-cd PurposeToM
+cd PICTURE
 pip install -r requirements.txt
 ```
 
