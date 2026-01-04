@@ -19,7 +19,7 @@ cd code
 bash run_bigtom_gpt.sh
 
 # Llama family / BigToM
-bash run_bigtom_gpt.sh
+bash run_bigtom.sh
 
 # GPT family / BigToM
 bash run_tomi_gpt.sh
