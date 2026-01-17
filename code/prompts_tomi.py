@@ -27,7 +27,7 @@ The main question to be solved is as follows:
 
 {question}
 
-What events does {character} know about? Think step by step before answering, keeping the main question in mind."""
+What events does and does not {character} know about? Output the answer for the main question by thinking step by step."""
 
 PERSPECTIVE_PROMPT_OURS_LLAMA = """\
 The following is a sequence of events about some characters, that takes place in multiple locations.
@@ -44,7 +44,7 @@ The main question to be solved is as follows:
 {question}
 This is the end of the main question.
 
-What events does {character} know about? Reason step by step before answering according to the above rules. Hold the main question in mind."""
+What events does and does not {character} know about? Output the answer for the main question by thinking step by step."""
 
 PERSPECTIVE_PROMPT_PT="""\
 Story:

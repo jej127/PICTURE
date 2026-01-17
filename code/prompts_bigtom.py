@@ -30,7 +30,7 @@ The main question to be solved is as follows:
 This is the end of the main question.
 
 Let's first identify what events {name} knows about. If the story says {name} is not aware of some events in this story, it means {name} knows only the rest of the events.
-Reason step by step before answering. Hold the main question in mind.
+Then, solve the main question step by step based on the original story and the events {name} knows about.
 """
 
 GPT_PERSPECTIVE_PROMPT_PS = """
@@ -74,27 +74,17 @@ Provide only a JSON array in the following format. Do not include any explanatio
 """
 
 LLAMA_PERSPECTIVE_PROMPT_OURS = """
-Consider this story with an unexpected event.
-
+Imagine you are {name}, and consider this story that has an unexpected event.
 {story}
 
 The main question to be solved is as follows:
 
 {question}
-This is the end of the main question. Your task is in two steps.
+This is the end of the main question.
 
-Step 1: Does the story say that {name} notices/sees/realizes the unexpected event?
-
-If so, simply output the original story with nothing changed. 
-However, if {name} is not aware of the changes in this story, output only the events that {name} knows, i.e., the events before the unexpected event happens.
-
-Step 2: Answer by thinking step by step based on the original story and the story you have rewritten. Keep the main question in mind. Do not output a blank answer or say you do not have enough information -- you must choose either choice a) or choice b).
-
-Format your answer as follows:
-Step 1:
-Step 2:
+Let's first identify what events {name} knows about. If the story says {name} is not aware of some events in this story, it means {name} knows only the rest of the events.
+Then, solve the main question step by step based on the original story and the events {name} knows about.
 """
-
 
 LLAMA_SIM_PROMPT = """\
 Answer the questions based on the context. Keep your answer concise, few words are enough, maximum one sentence. Answer as 'Answer:<option>)<answer>'.
