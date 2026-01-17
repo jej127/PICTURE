@@ -15,16 +15,21 @@ You may change "method" argument to one of {base, cot, ps, simulation, ptom, our
 ```
 cd code
 
+# GPT family / ToMi
+bash run_tomi_gpt.sh
+
 # GPT family / BigToM
 bash run_bigtom_gpt.sh
 
-# Llama family / BigToM
-bash run_bigtom.sh
-
-# GPT family / BigToM
-bash run_tomi_gpt.sh
+# GPT family / FANToM
+bash run_bigtom_gpt.sh
 
 # Llama family / ToMi
 bash run_tomi.sh
 
+# Llama family / BigToM
+bash run_bigtom.sh
+
+# Llama family / FANToM
+bash run_bigtom.sh
 ```
