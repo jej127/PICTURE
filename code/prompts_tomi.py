@@ -85,27 +85,6 @@ Based on the above information, answer the following question:
 Keep your answer concise, one sentence is enough. You must choose one of the above choices.
 """
 
-GPT_SIM_PROMPT2 = """\
-{story}
-
-You are {name}.
-Based on the above information, answer the following question:
-{question}
-
-Keep your answer concise, one sentence is enough. You must choose one of the above choices.
-{perspective}
-"""
-
-LLAMA_SIM_PROMPT2 = """\
-{story}
-
-You are {name}.
-Based on the above information, answer the following question:
-{question}
-
-You must choose one of the above choices, do not say there is not enough information. Answer with a single word, do not output anything else.
-{perspective}
-"""
 
 ######## Prompts for other methods ##########
 
